@@ -1,56 +1,41 @@
-# Ejercicio 2 · Negar sin equivocarse: De Morgan en validaciones
+# Reto 2 - De Morgan en validaciones
 
-**Leyes de De Morgan:**
-- `¬(A ∧ B) = ¬A ∨ ¬B`
-- `¬(A ∨ B) = ¬A ∧ ¬B`
+De Morgan dice que para negar una condición compuesta hay que negar cada parte y cambiar el conector: `no (A y B)` es `no A o no B`.
 
-Se niega cada parte y se cambia el conector.
+## El formulario
 
-## Caso 1 · Formulario de login
+Un formulario es válido si tiene correo y contraseña. Para saber cuándo NO es válido, lo correcto es `no correoLleno o no passwordLleno`, porque basta con que falte uno.
 
-- Válido: `correoLleno && passwordLleno`
-- **No válido (bien):** `!correoLleno || !passwordLleno`. Basta con que falte uno.
-- No válido (error clásico): `!correoLleno && !passwordLleno`. Solo detecta cuando faltan los dos.
+El error que dicen en clase que todos cometen es poner `no correoLleno y no passwordLleno`. Eso solo avisa cuando faltan los dos:
 
-| correoLleno | passwordLleno | Válido | Negación correcta | Error clásico |
-|---|---|---|---|---|
-| V | V | V | F | F |
-| V | F | F | **V** | F ← no detecta el error |
-| F | V | F | **V** | F ← no detecta el error |
-| F | F | F | V | V |
+| Correo | Contraseña | Negación correcta | Error común |
+|---|---|---|---|
+| S | S | válido | válido |
+| S | N | avisa | no avisa (mal) |
+| N | S | avisa | no avisa (mal) |
+| N | N | avisa | avisa |
 
-Implementación: [`02-formulario-de-morgan.psc`](02-formulario-de-morgan.psc).
+Lo hice en PSeInt en [02-formulario-de-morgan.psc](02-formulario-de-morgan.psc) y probé las cuatro combinaciones.
 
-## Caso 2 · Validador de contraseña (ejercicio propuesto)
+## Validador de contraseña (ejercicio propuesto)
 
-Regla: válida si tiene **al menos 8 caracteres** (L), **al menos un número** (N) y **no contiene "password"** (P).
+La contraseña sirve si tiene al menos 8 caracteres, tiene algún número y no tiene la palabra "password". Negando con De Morgan, es inválida si tiene menos de 8, o si no tiene número, o si tiene "password". Cada una de esas partes es un mensaje de error distinto.
 
-- Válida: `L ∧ N ∧ ¬P`
-- **Inválida (De Morgan):** `¬L ∨ ¬N ∨ P`
-
-Cada parte de la negación es un mensaje de error distinto:
-
-| Parte negada | Mensaje |
-|---|---|
-| `¬L` (longitud < 8) | «Debe tener al menos 8 caracteres» |
-| `¬N` (no hay dígitos) | «Debe incluir al menos un número» |
-| `P` (contiene "password") | «No puede contener la palabra password» |
-
-Prueba de escritorio:
-
-| Contraseña | L | N | P | Resultado |
-|---|---|---|---|---|
-| `riwi2026` | V | V | F | Válida (8 caracteres justos: límite) |
-| `riwi202` | F | V | F | Error: menos de 8 |
-| `abcdefgh` | V | F | F | Error: sin número |
-| `Password1` | V | V | V | Error: contiene password (sin importar mayúsculas) |
-| `abc` | F | F | F | Dos errores: longitud y número |
-
-Pseudocódigo (con las proposiciones ya calculadas, como en el soporte temático):
+Así lo pensé en pseudocódigo:
 
 ```
 SI NO tieneOchoCaracteres ENTONCES mostrar "Debe tener al menos 8 caracteres"
-SI NO tieneNumero         ENTONCES mostrar "Debe incluir al menos un número"
-SI contienePassword       ENTONCES mostrar "No puede contener la palabra password"
+SI NO tieneNumero ENTONCES mostrar "Debe incluir al menos un número"
+SI contienePassword ENTONCES mostrar "No puede contener la palabra password"
 SI tieneOchoCaracteres Y tieneNumero Y NO contienePassword ENTONCES mostrar "Contraseña válida"
 ```
+
+Prueba de escritorio:
+
+| Contraseña | Resultado |
+|---|---|
+| riwi2026 | válida (tiene 8 justos) |
+| riwi202 | error: menos de 8 |
+| abcdefgh | error: no tiene número |
+| Password1 | error: tiene "password" |
+| abc | dos errores: menos de 8 y sin número |

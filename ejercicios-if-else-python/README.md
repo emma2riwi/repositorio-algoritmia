@@ -1,18 +1,16 @@
-# Ejercicios de condicionales en Python (if / elif / else)
+# Ejercicios de if / else en Python
 
-Ejercicios de práctica de decisiones en Python. Cada archivo empieza con su enunciado como comentario.
+Estos los hice para practicar condicionales en Python. Cada archivo tiene el enunciado arriba como comentario.
 
-| Archivo | Enunciado |
-|---|---|
-| `ejercicios_01.py` | Nombre y edad: indicar si es mayor de edad |
-| `ejercicios_02.py` | Suma y resta de dos números; ¿la suma es mayor que 10? |
-| `ejercicios_03.py` | Positivo, negativo o cero |
-| `ejercicios_04.py` | Par o impar |
-| `ejercicios_05.py` | Cuál de dos números es mayor, o si son iguales |
-| `ejercicios_06.py` | Calculadora con +, -, *, / evitando la división entre cero |
-| `ejercicios_07.py` | Ingreso a un evento para mayores de 18, validando edad negativa |
-| `ejercicios_08.py` | Nota de 0 a 100: aprobado (70 o más) o reprobado, validando la nota |
-| `ejercicios_09.py` | Descuento según el valor de la compra |
-| `ejercicios_10.py` | Login con usuario y contraseña definidos |
+1. Pedir nombre y edad y decir si es mayor de edad
+2. Sumar y restar dos números y decir si la suma pasa de 10
+3. Decir si un número es positivo, negativo o cero
+4. Decir si un número es par o impar
+5. Decir cuál de dos números es mayor o si son iguales
+6. Calculadora con +, -, * y /, sin dejar dividir entre 0
+7. Decir si puede entrar a un evento de mayores de 18 (y que la edad no sea negativa)
+8. Nota de 0 a 100: aprobado con 70 o más, y validar que la nota esté en el rango
+9. Descuento según el valor de la compra
+10. Login con un usuario y contraseña definidos
 
-Se ejecutan con `python3 ejercicios_XX.py`.
+Se corren con `python3 ejercicios_01.py` (cambiando el número).

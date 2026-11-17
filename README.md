@@ -1,46 +1,42 @@
-# Repositorio de Algoritmia · Trayecto 1
+# Repositorio de Algoritmia - Trayecto 1
 
-Aquí están mis ejercicios de **Algoritmia 1** en Riwi (Desarrollo de Software, MED C8+). Los algoritmos los hice en **PSeInt** (`.psc`). Los laboratorios de Moodle que pedían JavaScript están en `.js`.
+Estos son mis ejercicios de Algoritmia 1 de Riwi. Casi todo está hecho en PSeInt (archivos `.psc`) y algunos laboratorios en JavaScript, porque así venían en Moodle.
 
-Organicé todo por semana. En el README de cada semana explico la lógica de cada algoritmo: qué entra, qué hace y qué muestra. También dejé la tabla de verdad, de decisión o de traza, y la prueba de escritorio con los casos borde que revisé.
+Lo separé por semanas. En el README de cada semana puse cómo pensé cada ejercicio y las pruebas que hice.
 
-## Índice
+## Semana 1 - Introducción a la algoritmia
 
-### [Semana 1 · Introducción a la algoritmia y pensamiento computacional](semana-1/)
-| Ejercicio | Archivo |
-|---|---|
-| Reto 1 · Instrucciones sin ambigüedad | [`semana-1/01-instrucciones-sin-ambiguedad.md`](semana-1/01-instrucciones-sin-ambiguedad.md) |
-| Reto 2 · Entrada, proceso y salida (rectángulo) | [`semana-1/02-entrada-proceso-salida.psc`](semana-1/02-entrada-proceso-salida.psc) |
-| Reto 3 · Del pseudocódigo al diagrama de flujo | [`semana-1/03-positivo-negativo-cero.psc`](semana-1/03-positivo-negativo-cero.psc) |
-| Reto 4 · Calculadora de propinas | [`semana-1/04-calculadora-propinas.psc`](semana-1/04-calculadora-propinas.psc) |
-| Secuencial · Celsius a Fahrenheit | [`semana-1/05-celsius-a-fahrenheit.psc`](semana-1/05-celsius-a-fahrenheit.psc) |
-| Secuencial · Promedio de tres notas | [`semana-1/06-promedio-tres-notas.psc`](semana-1/06-promedio-tres-notas.psc) |
-| Diagramas de flujo y laboratorios | [`semana-1/README.md`](semana-1/README.md) |
+- Reto 1, instrucciones sin ambigüedad: [01-instrucciones-sin-ambiguedad.md](semana-1/01-instrucciones-sin-ambiguedad.md)
+- Reto 2, área y perímetro de un rectángulo: [02-entrada-proceso-salida.psc](semana-1/02-entrada-proceso-salida.psc)
+- Reto 3, positivo, negativo o cero: [03-positivo-negativo-cero.psc](semana-1/03-positivo-negativo-cero.psc)
+- Reto 4, calculadora de propinas: [04-calculadora-propinas.psc](semana-1/04-calculadora-propinas.psc)
+- Celsius a Fahrenheit: [05-celsius-a-fahrenheit.psc](semana-1/05-celsius-a-fahrenheit.psc)
+- Promedio de tres notas: [06-promedio-tres-notas.psc](semana-1/06-promedio-tres-notas.psc)
 
-### [Semana 2 · Lógica proposicional y estructuras de decisión](semana-2/)
-| Ejercicio | Archivo |
-|---|---|
-| Reto 1 · Tablas de verdad + acceso a un evento | [`01-tablas-de-verdad.md`](semana-2/01-tablas-de-verdad.md), [`01-acceso-evento.psc`](semana-2/01-acceso-evento.psc) |
-| Reto 2 · De Morgan en validaciones | [`02-de-morgan-validaciones.md`](semana-2/02-de-morgan-validaciones.md), [`02-formulario-de-morgan.psc`](semana-2/02-formulario-de-morgan.psc) |
-| Reto 3 · Tarifas del parqueadero | [`03-tarifa-parqueadero.psc`](semana-2/03-tarifa-parqueadero.psc) |
-| Reto 4 · Semáforo de inventario y año bisiesto | [`04-semaforo-inventario.psc`](semana-2/04-semaforo-inventario.psc), [`04-anio-bisiesto.psc`](semana-2/04-anio-bisiesto.psc) |
-| Propuesto · Tarifa de un gimnasio | [`05-tarifa-gimnasio.psc`](semana-2/05-tarifa-gimnasio.psc) |
-| Lab · Bisiesto y semáforo en JS | [`laboratorios/bisiesto-semaforo.js`](semana-2/laboratorios/bisiesto-semaforo.js) |
+Los diagramas de flujo y los laboratorios están en el [README de la semana 1](semana-1/README.md).
 
-### [Semana 3 · Patrones de repetición y descomposición de problemas](semana-3/)
-| Ejercicio | Archivo |
-|---|---|
-| Reto 1 · Cajero con centinela | [`01-cajero-centinela.psc`](semana-3/01-cajero-centinela.psc) |
-| Reto 2 · Calificaciones: cuatro patrones | [`02-calificaciones.psc`](semana-3/02-calificaciones.psc) |
-| Reto 3 · Pirámide de asteriscos | [`03-piramide-asteriscos.psc`](semana-3/03-piramide-asteriscos.psc) |
-| Reto 4 · Factura con SubProcesos + árbol de componentes | [`04-factura-restaurante.psc`](semana-3/04-factura-restaurante.psc), [`04-arbol-componentes-perfil.md`](semana-3/04-arbol-componentes-perfil.md) |
-| Propuesto · Validación de usuario (3 intentos) | [`laboratorios/validacion-usuario.js`](semana-3/laboratorios/validacion-usuario.js) |
-| Labs · Calificaciones y carrito en JS | [`laboratorios/`](semana-3/laboratorios/) |
+## Semana 2 - Lógica y decisiones
 
-### [Ejercicios de condicionales en Python](ejercicios-if-else-python/)
-Diez ejercicios de if, elif y else que hice para practicar decisiones en Python.
+- Reto 1, tablas de verdad: [01-tablas-de-verdad.md](semana-2/01-tablas-de-verdad.md) y [01-acceso-evento.psc](semana-2/01-acceso-evento.psc)
+- Reto 2, De Morgan: [02-de-morgan-validaciones.md](semana-2/02-de-morgan-validaciones.md) y [02-formulario-de-morgan.psc](semana-2/02-formulario-de-morgan.psc)
+- Reto 3, parqueadero: [03-tarifa-parqueadero.psc](semana-2/03-tarifa-parqueadero.psc)
+- Reto 4, semáforo de inventario y año bisiesto: [04-semaforo-inventario.psc](semana-2/04-semaforo-inventario.psc) y [04-anio-bisiesto.psc](semana-2/04-anio-bisiesto.psc)
+- Gimnasio (ejercicio propuesto): [05-tarifa-gimnasio.psc](semana-2/05-tarifa-gimnasio.psc)
+- Laboratorio en JS: [bisiesto-semaforo.js](semana-2/laboratorios/bisiesto-semaforo.js)
 
-## Cómo probarlos
-- **`.psc`:** ábrelo en [PSeInt](https://pseint.sourceforge.net/) y dale a Ejecutar. Con «Dibujar diagrama de flujo» sale el diagrama.
-- **`.js`:** `node semana-X/laboratorios/archivo.js`
-- **`.py`:** `python3 ejercicios-if-else-python/ejercicios_XX.py`
+## Semana 3 - Ciclos y SubProcesos
+
+- Reto 1, cajero con centinela: [01-cajero-centinela.psc](semana-3/01-cajero-centinela.psc)
+- Reto 2, calificaciones: [02-calificaciones.psc](semana-3/02-calificaciones.psc)
+- Reto 3, pirámide de asteriscos: [03-piramide-asteriscos.psc](semana-3/03-piramide-asteriscos.psc)
+- Reto 4, factura con SubProcesos: [04-factura-restaurante.psc](semana-3/04-factura-restaurante.psc) y el árbol de componentes en [04-arbol-componentes-perfil.md](semana-3/04-arbol-componentes-perfil.md)
+- Validación de correo con 3 intentos (propuesto): [validacion-usuario.js](semana-3/laboratorios/validacion-usuario.js)
+- Laboratorios en JS: [carpeta laboratorios](semana-3/laboratorios/)
+
+## Python
+
+En [ejercicios-if-else-python](ejercicios-if-else-python/) están los 10 ejercicios de if/else que hice en Python.
+
+## Para probarlos
+
+Los `.psc` se abren en PSeInt y se corren con el botón de ejecutar. Los `.js` se corren con `node archivo.js` y los `.py` con `python3 archivo.py`.
