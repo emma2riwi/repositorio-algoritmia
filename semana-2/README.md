@@ -4,7 +4,7 @@ Esta semana fue de proposiciones, tablas de verdad y decisiones con Si / SiNo. L
 
 ## Reto 1 - Tablas de verdad
 
-Las tablas están en [01-tablas-de-verdad.md](01-tablas-de-verdad.md). El algoritmo del evento es [01-acceso-evento.psc](01-acceso-evento.psc).
+El algoritmo del evento es [01-acceso-evento.psc](01-acceso-evento.psc).
 
 En el evento primero reviso que la edad no sea negativa. Después guardo cada proposición con nombre (esMayor, tieneBoleta, vaAcompanado) y la regla queda `tieneBoleta Y (esMayor O vaAcompanado)`. Si no entra, le digo por qué: si es por la boleta o porque es menor y va solo.
 
@@ -19,7 +19,16 @@ En el evento primero reviso que la edad no sea negativa. Después guardo cada pr
 
 ## Reto 2 - De Morgan
 
-La explicación está en [02-de-morgan-validaciones.md](02-de-morgan-validaciones.md) y el algoritmo en [02-formulario-de-morgan.psc](02-formulario-de-morgan.psc). Ahí también está el validador de contraseña.
+[02-formulario-de-morgan.psc](02-formulario-de-morgan.psc)
+
+Un formulario es válido si tiene correo y contraseña. Para saber cuándo no es válido uso De Morgan: `No correoLleno O No passwordLleno`, porque basta con que falte uno. Si lo escribiera con Y, solo avisaría cuando faltan los dos.
+
+| Correo | Contraseña | Resultado |
+|---|---|---|
+| S | S | válido |
+| S | N | revisa los campos |
+| N | S | revisa los campos |
+| N | N | revisa los campos |
 
 ## Reto 3 - Parqueadero
 

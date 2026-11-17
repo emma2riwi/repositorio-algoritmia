@@ -70,8 +70,6 @@ Así el algoritmo principal queda corto y se lee como el plan: subtotal, propina
 
 Prueba: 2 platos (32000 x 2 y 18500 x 1) dan subtotal 82500. Con propina son 8250 y el total queda en 90750. Entre 3 da 30250, que redondeado queda en 31000 por persona. Sin propina y entre 2 da 41250, que queda en 42000.
 
-El árbol de componentes de la página de perfil está en [04-arbol-componentes-perfil.md](04-arbol-componentes-perfil.md).
-
 ## Validación de correo (ejercicio propuesto)
 
 [laboratorios/validacion-usuario.js](laboratorios/validacion-usuario.js)

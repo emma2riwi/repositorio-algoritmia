@@ -1,10 +1,6 @@
 # Semana 1 - Introducción a la algoritmia
 
-Esta semana había que hacer cuatro algoritmos secuenciales en PSeInt, con su diagrama de flujo y probados con al menos dos entradas. Hice los cuatro retos y dos algoritmos secuenciales más para completar.
-
-## Reto 1 - Instrucciones sin ambigüedad
-
-Está en [01-instrucciones-sin-ambiguedad.md](01-instrucciones-sin-ambiguedad.md).
+Esta semana había que hacer cuatro algoritmos secuenciales en PSeInt, con su diagrama de flujo y probados con al menos dos entradas. Hice los retos y dos algoritmos secuenciales más para completar.
 
 ## Reto 2 - Área y perímetro de un rectángulo
 

@@ -13,4 +13,3 @@ Estos los hice para practicar condicionales en Python. Cada archivo tiene el enu
 9. Descuento según el valor de la compra
 10. Login con un usuario y contraseña definidos
 
-Se corren con `python3 ejercicios_01.py` (cambiando el número).
