@@ -13,7 +13,7 @@
 
 ## Algoritmos secuenciales (evidencia)
 
-Los cuatro secuenciales son 02, 04, 05 y 06. El 03 tiene decisiones.
+Los cuatro secuenciales son 02, 04, 05 y 06. El 03 tiene decisiones; el 04 solo valida antes que haya al menos 1 persona.
 
 | Archivo | Prueba 1 | Prueba 2 |
 |---|---|---|
