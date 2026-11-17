@@ -17,7 +17,7 @@
 |---|---|---|
 | Cajero | centinela + acumulador + contador | `01-cajero-centinela.psc` |
 | Calificaciones | acumulador, máximo, mínimo, contador | `02-calificaciones.psc` |
-| Validación de usuario | intentos limitados + bandera | [`05-validacion-usuario.psc`](05-validacion-usuario.psc) |
+| Validación de usuario | intentos limitados + bandera | [`laboratorios/validacion-usuario.js`](laboratorios/validacion-usuario.js) |
 | Pirámide | ciclos anidados | `03-piramide-asteriscos.psc` |
 | Factura de restaurante | descomposición en SubProcesos (tabla de firmas) | `04-factura-restaurante.psc` |
 | Página de perfil | árbol de componentes | `04-arbol-componentes-perfil.md` |

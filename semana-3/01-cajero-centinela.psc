@@ -10,8 +10,6 @@
 //   Actualización:  leer el siguiente monto (sin esto el ciclo no termina)
 
 Algoritmo CajeroCentinela
-	Definir monto, total Como Real
-	Definir retiros Como Entero
 
 	total <- 0       // acumulador
 	retiros <- 0     // contador

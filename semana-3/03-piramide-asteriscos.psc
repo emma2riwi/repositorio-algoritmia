@@ -3,12 +3,10 @@
 // En el nivel f (de 1 a n):
 //   espacios   = n - f
 //   asteriscos = 2 * f - 1
-// El ciclo externo recorre los niveles; los dos internos construyen cada línea.
-// "Con Paso 1" evita que PSeInt cuente hacia atrás cuando n - f = 0 (último nivel).
+// El ciclo externo recorre los niveles; los dos internos escriben cada línea.
+// "Escribir Sin Saltar" escribe sin bajar de línea; el Escribir "" final baja.
 
 Algoritmo PiramideAsteriscos
-	Definir n, f, j Como Entero
-	Definir linea Como Caracter
 
 	Escribir "Número de niveles:"
 	Leer n
@@ -17,14 +15,15 @@ Algoritmo PiramideAsteriscos
 		Escribir "Error: los niveles deben ser mayores que 0"
 	SiNo
 		Para f <- 1 Hasta n Hacer
-			linea <- ""
+			// Espacios: en el último nivel son 0. "Con Paso 1" evita que PSeInt
+			// cuente hacia atrás (de 1 a 0) cuando no hay espacios que escribir.
 			Para j <- 1 Hasta n - f Con Paso 1 Hacer
-				linea <- Concatenar(linea, " ")
+				Escribir Sin Saltar " "
 			FinPara
 			Para j <- 1 Hasta 2 * f - 1 Hacer
-				linea <- Concatenar(linea, "*")
+				Escribir Sin Saltar "*"
 			FinPara
-			Escribir linea
+			Escribir ""
 		FinPara
 	FinSi
 FinAlgoritmo
@@ -34,8 +33,4 @@ FinAlgoritmo
 // 1 |        2         |          1          | "  *"
 // 2 |        1         |          3          | " ***"
 // 3 |        0         |          5          | "*****"
-// Salida:
-//   *
-//  ***
-// *****
 // Caso borde: n = 1 imprime "*"; n = 0 da error.
