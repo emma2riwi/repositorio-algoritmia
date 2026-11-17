@@ -14,16 +14,12 @@
 // Retorno temprano: primero se descartan los casos especiales (inválido, plana).
 
 Algoritmo TarifaParqueadero
-	Definir horas Como Real
-	Definir horasCobradas, valor Como Entero
-	Definir respFactura Como Caracter
-	Definir tieneFactura Como Logico
 
 	Escribir "Horas que estuvo el vehículo (puede tener decimales):"
 	Leer horas
 	Escribir "¿Presenta factura? (S/N)"
 	Leer respFactura
-	tieneFactura <- Mayusculas(respFactura) = "S"
+	tieneFactura <- respFactura = "S"
 
 	Si horas <= 0 Entonces
 		Escribir "Error: tiempo inválido (horas debe ser mayor que 0)"
@@ -31,9 +27,10 @@ Algoritmo TarifaParqueadero
 		Si horas > 6 Entonces
 			valor <- 20000
 		SiNo
-			// "Hora o fracción": redondear hacia arriba
-			horasCobradas <- trunc(horas)
-			Si horas > horasCobradas Entonces
+			// "Hora o fracción": redondear hacia arriba.
+			// redon() redondea al entero más cercano; si quedó por debajo, se suma 1.
+			horasCobradas <- redon(horas)
+			Si horasCobradas < horas Entonces
 				horasCobradas <- horasCobradas + 1
 			FinSi
 

@@ -7,9 +7,6 @@
 // Se descarta primero la edad inválida (caso borde).
 
 Algoritmo AccesoEvento
-	Definir edad Como Entero
-	Definir respBoleta, respAcompanado Como Caracter
-	Definir esMayor, tieneBoleta, vaAcompanado, puedeEntrar Como Logico
 
 	Escribir "Edad:"
 	Leer edad
@@ -24,8 +21,8 @@ Algoritmo AccesoEvento
 
 		// Proposiciones con nombre: la regla se lee casi como prosa
 		esMayor <- edad >= 18
-		tieneBoleta <- Mayusculas(respBoleta) = "S"
-		vaAcompanado <- Mayusculas(respAcompanado) = "S"
+		tieneBoleta <- respBoleta = "S"
+		vaAcompanado <- respAcompanado = "S"
 
 		puedeEntrar <- tieneBoleta Y (esMayor O vaAcompanado)
 

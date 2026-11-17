@@ -11,7 +11,6 @@
 //    No     |    No     |     No      | Disponible
 
 Algoritmo SemaforoInventario
-	Definir stock Como Entero
 
 	Escribir "Unidades en stock:"
 	Leer stock

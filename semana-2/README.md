@@ -7,7 +7,7 @@
 | # | Ejercicio | Archivos |
 |---|---|---|
 | 1 | De la regla a la condición: tablas de verdad | [`01-tablas-de-verdad.md`](01-tablas-de-verdad.md), [`01-acceso-evento.psc`](01-acceso-evento.psc) |
-| 2 | Negar sin equivocarse: De Morgan en validaciones | [`02-de-morgan-validaciones.md`](02-de-morgan-validaciones.md), [`02-validador-contrasena.psc`](02-validador-contrasena.psc) |
+| 2 | Negar sin equivocarse: De Morgan en validaciones | [`02-de-morgan-validaciones.md`](02-de-morgan-validaciones.md), [`02-formulario-de-morgan.psc`](02-formulario-de-morgan.psc) |
 | 3 | Tarifas del parqueadero: tabla de decisión en PSeInt | [`03-tarifa-parqueadero.psc`](03-tarifa-parqueadero.psc) |
 | 4 | Semáforo de inventario y año bisiesto: casos borde | [`04-semaforo-inventario.psc`](04-semaforo-inventario.psc), [`04-anio-bisiesto.psc`](04-anio-bisiesto.psc) |
 
@@ -18,7 +18,7 @@
 | Año bisiesto | `04-anio-bisiesto.psc` | 1900, 2000, 2024, 2026 |
 | Acceso a un evento | `01-acceso-evento.psc` | edad 17/18, sin boleta, edad negativa |
 | Tarifa de un gimnasio | [`05-tarifa-gimnasio.psc`](05-tarifa-gimnasio.psc) | estudiante y mayor de 60 a la vez, edad 60/61 |
-| Validador de contraseña | `02-validador-contrasena.psc` | 7/8 caracteres, sin número, "Password1" |
+| Validador de contraseña | `02-de-morgan-validaciones.md` (tabla, pseudocódigo y prueba) | 7/8 caracteres, sin número, "Password1" |
 | Semáforo de inventario | `04-semaforo-inventario.psc` | -1, 0, 1, 10, 11 |
 
 ## Laboratorios de Moodle

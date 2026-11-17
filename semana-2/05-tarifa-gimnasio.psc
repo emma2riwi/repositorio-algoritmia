@@ -11,10 +11,6 @@
 // Como "estudiante" ya da el mayor descuento, se pregunta primero por él.
 
 Algoritmo TarifaGimnasio
-	Definir tarifa, descuento, total Como Real
-	Definir edad Como Entero
-	Definir respEstudiante Como Caracter
-	Definir esEstudiante, esMayor60 Como Logico
 
 	Escribir "Tarifa mensual base:"
 	Leer tarifa
@@ -26,7 +22,7 @@ Algoritmo TarifaGimnasio
 	Si tarifa < 0 O edad < 0 Entonces
 		Escribir "Error: datos inválidos"
 	SiNo
-		esEstudiante <- Mayusculas(respEstudiante) = "S"
+		esEstudiante <- respEstudiante = "S"
 		esMayor60 <- edad > 60
 
 		Si esEstudiante Entonces

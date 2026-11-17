@@ -19,6 +19,8 @@ Se niega cada parte y se cambia el conector.
 | F | V | F | **V** | F ← no detecta el error |
 | F | F | F | V | V |
 
+Implementación: [`02-formulario-de-morgan.psc`](02-formulario-de-morgan.psc).
+
 ## Caso 2 · Validador de contraseña (ejercicio propuesto)
 
 Regla: válida si tiene **al menos 8 caracteres** (L), **al menos un número** (N) y **no contiene "password"** (P).
@@ -44,4 +46,11 @@ Prueba de escritorio:
 | `Password1` | V | V | V | Error: contiene password (sin importar mayúsculas) |
 | `abc` | F | F | F | Dos errores: longitud y número |
 
-Implementación: [`02-validador-contrasena.psc`](02-validador-contrasena.psc).
+Pseudocódigo (con las proposiciones ya calculadas, como en el soporte temático):
+
+```
+SI NO tieneOchoCaracteres ENTONCES mostrar "Debe tener al menos 8 caracteres"
+SI NO tieneNumero         ENTONCES mostrar "Debe incluir al menos un número"
+SI contienePassword       ENTONCES mostrar "No puede contener la palabra password"
+SI tieneOchoCaracteres Y tieneNumero Y NO contienePassword ENTONCES mostrar "Contraseña válida"
+```
