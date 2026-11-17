@@ -5,7 +5,6 @@
 // Salida: grados Fahrenheit.
 
 Algoritmo CelsiusAFahrenheit
-	Definir celsius, fahrenheit Como Real
 
 	Escribir "Temperatura en °C:"
 	Leer celsius

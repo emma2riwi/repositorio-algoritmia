@@ -5,7 +5,6 @@
 // Salida: el promedio.
 
 Algoritmo PromedioTresNotas
-	Definir nota1, nota2, nota3, promedio Como Real
 
 	Escribir "Nota 1:"
 	Leer nota1

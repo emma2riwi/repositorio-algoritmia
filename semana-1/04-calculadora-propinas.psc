@@ -10,8 +10,6 @@
 // que haya al menos 1 persona para no dividir entre 0.
 
 Algoritmo CalculadoraPropinas
-	Definir cuenta, porcentaje, propina, total, porPersona Como Real
-	Definir personas Como Entero
 
 	// ENTRADA
 	Escribir "Valor de la cuenta:"

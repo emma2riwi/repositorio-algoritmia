@@ -9,7 +9,6 @@
 // con el botón "Dibujar diagrama de flujo").
 
 Algoritmo ClasificarNumero
-	Definir numero Como Real
 
 	Escribir "Ingrese un número:"
 	Leer numero

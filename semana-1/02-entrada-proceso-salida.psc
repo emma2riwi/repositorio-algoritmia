@@ -6,7 +6,6 @@
 // Es secuencial: no hay decisiones, las instrucciones se ejecutan una tras otra.
 
 Algoritmo AreaPerimetroRectangulo
-	Definir base, altura, area, perimetro Como Real
 
 	// ENTRADA
 	Escribir "Ingrese la base del rectángulo (m):"
