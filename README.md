@@ -21,7 +21,7 @@ Cada ejercicio explica su lógica en comentarios: enunciado, entrada, proceso y 
 | Ejercicio | Archivo |
 |---|---|
 | Reto 1 · Tablas de verdad + acceso a un evento | [`01-tablas-de-verdad.md`](semana-2/01-tablas-de-verdad.md), [`01-acceso-evento.psc`](semana-2/01-acceso-evento.psc) |
-| Reto 2 · De Morgan + validador de contraseña | [`02-de-morgan-validaciones.md`](semana-2/02-de-morgan-validaciones.md), [`02-validador-contrasena.psc`](semana-2/02-validador-contrasena.psc) |
+| Reto 2 · De Morgan en validaciones | [`02-de-morgan-validaciones.md`](semana-2/02-de-morgan-validaciones.md), [`02-formulario-de-morgan.psc`](semana-2/02-formulario-de-morgan.psc) |
 | Reto 3 · Tarifas del parqueadero | [`03-tarifa-parqueadero.psc`](semana-2/03-tarifa-parqueadero.psc) |
 | Reto 4 · Semáforo de inventario y año bisiesto | [`04-semaforo-inventario.psc`](semana-2/04-semaforo-inventario.psc), [`04-anio-bisiesto.psc`](semana-2/04-anio-bisiesto.psc) |
 | Propuesto · Tarifa de un gimnasio | [`05-tarifa-gimnasio.psc`](semana-2/05-tarifa-gimnasio.psc) |
@@ -34,7 +34,7 @@ Cada ejercicio explica su lógica en comentarios: enunciado, entrada, proceso y 
 | Reto 2 · Calificaciones: cuatro patrones | [`02-calificaciones.psc`](semana-3/02-calificaciones.psc) |
 | Reto 3 · Pirámide de asteriscos | [`03-piramide-asteriscos.psc`](semana-3/03-piramide-asteriscos.psc) |
 | Reto 4 · Factura con SubProcesos + árbol de componentes | [`04-factura-restaurante.psc`](semana-3/04-factura-restaurante.psc), [`04-arbol-componentes-perfil.md`](semana-3/04-arbol-componentes-perfil.md) |
-| Propuesto · Validación de usuario (3 intentos) | [`05-validacion-usuario.psc`](semana-3/05-validacion-usuario.psc) |
+| Propuesto · Validación de usuario (3 intentos) | [`laboratorios/validacion-usuario.js`](semana-3/laboratorios/validacion-usuario.js) |
 | Labs · Calificaciones y carrito en JS | [`laboratorios/`](semana-3/laboratorios/) |
 
 ### [Ejercicios de condicionales en Python](ejercicios-if-else-python/)
