@@ -1,17 +1,4 @@
-// Ejercicio propuesto · Tarifa de un gimnasio
-// Regla: estudiantes pagan 50 % (descuento del 50 %); mayores de 60 años pagan 40 %
-// menos (descuento del 40 %). Si cumple ambas, aplica el MAYOR descuento (50 %).
-//
-// Tabla de decisión: la columna "ambos" revela el caso que se repite.
-// ¿Estudiante? | ¿Mayor de 60? | Descuento
-//      Sí      |      Sí       |   50 %   <- mismo resultado que solo estudiante
-//      Sí      |      No       |   50 %
-//      No      |      Sí       |   40 %
-//      No      |      No       |    0 %
-// Como "estudiante" ya da el mayor descuento, se pregunta primero por él.
-
 Algoritmo TarifaGimnasio
-
 	Escribir "Tarifa mensual base:"
 	Leer tarifa
 	Escribir "Edad:"
@@ -40,10 +27,3 @@ Algoritmo TarifaGimnasio
 		Escribir "Total a pagar: $", total
 	FinSi
 FinAlgoritmo
-
-// Prueba de escritorio (tarifa base 100000):
-// edad 20, estudiante S -> 50 % -> 50000
-// edad 65, estudiante N -> 40 % -> 60000
-// edad 65, estudiante S -> 50 % -> 50000  (ambos: el mayor descuento)
-// edad 60, estudiante N -> 0 %  -> 100000 (límite: 60 no es "mayor de 60")
-// edad 61, estudiante N -> 40 % -> 60000
