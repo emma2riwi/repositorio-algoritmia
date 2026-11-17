@@ -1,8 +1,8 @@
 # Repositorio de Algoritmia · Trayecto 1
 
-Entregable T1 de **Algoritmia 1** (Riwi · Desarrollo de Software MED C8+). Los algoritmos están en **PSeInt** (`.psc`) y los laboratorios de Moodle en **JavaScript** (`.js`).
+Aquí están mis ejercicios de **Algoritmia 1** en Riwi (Desarrollo de Software, MED C8+). Los algoritmos los hice en **PSeInt** (`.psc`). Los laboratorios de Moodle que pedían JavaScript están en `.js`.
 
-Cada ejercicio explica su lógica en comentarios: enunciado, entrada, proceso y salida, la tabla de verdad, de decisión o de traza, y una prueba de escritorio con casos borde. Cada semana tiene su README con el detalle.
+Organicé todo por semana. En el README de cada semana explico la lógica de cada algoritmo: qué entra, qué hace y qué muestra. También dejé la tabla de verdad, de decisión o de traza, y la prueba de escritorio con los casos borde que revisé.
 
 ## Índice
 
@@ -38,9 +38,9 @@ Cada ejercicio explica su lógica en comentarios: enunciado, entrada, proceso y 
 | Labs · Calificaciones y carrito en JS | [`laboratorios/`](semana-3/laboratorios/) |
 
 ### [Ejercicios de condicionales en Python](ejercicios-if-else-python/)
-Diez ejercicios de if / elif / else.
+Diez ejercicios de if, elif y else que hice para practicar decisiones en Python.
 
-## Cómo ejecutar
-- **`.psc`:** abrir en [PSeInt](https://pseint.sourceforge.net/) y pulsar Ejecutar. El diagrama sale con «Dibujar diagrama de flujo».
+## Cómo probarlos
+- **`.psc`:** ábrelo en [PSeInt](https://pseint.sourceforge.net/) y dale a Ejecutar. Con «Dibujar diagrama de flujo» sale el diagrama.
 - **`.js`:** `node semana-X/laboratorios/archivo.js`
 - **`.py`:** `python3 ejercicios-if-else-python/ejercicios_XX.py`
